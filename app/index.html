@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body ng-app="app">
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Homepage</a>
+            <a class="navbar-brand" href="#!/forecast">Forecast</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+
+    
+  
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- endbower -->
+
+    <!-- Dependencies-->
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+
+
+    <!-- Core -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/routes.js"></script>
+    
+    <!-- Controllers -->
+    <script src="views/forecast/forecast.controller.js"></script>
+    <script src="views/homepage/homepage.controller.js"></script>
+
+    <!-- Services -->
+    <script src="views/homepage/homepage.service.js"></script>
+</body>
+</html>

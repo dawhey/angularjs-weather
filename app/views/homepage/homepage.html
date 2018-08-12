@@ -1,0 +1,8 @@
+<div class="col-md-6 col-md-offset-3">
+    <h3>Select city</h3>
+    <input 
+        type="text" 
+        ng-model="vm.selectedCity" 
+        uib-typeahead="city for city in vm.cities | filter:$viewValue | limitTo:8" 
+        class="form-control">
+</div>
