@@ -5,8 +5,17 @@
         .module('app')
         .controller('forecastController', forecastController);
 
-    function forecastController() {
+    forecastController.$inject = ['sharedService'];
+
+    function forecastController(sharedService) {
         var vm = this;
+        vm.city = '';
+
+        activate();
+
+        function activate() {
+            vm.city = sharedService.get('city');
+        }
     }
 
 }());

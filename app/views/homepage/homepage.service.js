@@ -11,14 +11,12 @@
 
         function getCities() {
             return [
-                'Wroclaw',
-                'Tokio',
-                'New York',
-                'Berlin',
-                'Beijing'
+                'Wroclaw, PL',
+                'Tokio, JP',
+                'New York, NY',
+                'Berlin, DE',
+                'Beijing, CN'
             ]
         }
     }
-
-
 })();
